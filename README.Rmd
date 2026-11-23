@@ -36,6 +36,7 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 library(AcCountPop)
 library(ggplot2)
+library(gt)
 
 ## Baseline Scenario Example
 results <- AcCountDeer(preharvest_pop = 40000,
@@ -63,19 +64,19 @@ results <- AcCountDeer(preharvest_pop = 40000,
              six_month_fawn_nhm = 0.45)
 
 #Postharvest Population
-head(results[,c(1:10)])
+gt(results[,c(1:10)])
 
 #Mid-Year Population
-head(results[,c(1,11:19)])
+gt(results[,c(1,11:19)])
 
 #Preharvest Population
-head(results[,c(1,20:28)])
+gt(results[,c(1,20:28)])
 
 #Harvest Trajectory
-head(results[,c(1,29:37)])
+gt(results[,c(1,29:37)])
 
 #Model Lambda
-head(results[,c(1,38)])
+gt(results[,c(1,38)])
 
 
 #Preharvest Population Plot
