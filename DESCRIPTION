@@ -1,6 +1,7 @@
 Package: AcCountPop
 Title: An Accessible Method to Model Wild Game Populations
 Version: 0.0.0.9000
+Date: 2026-11-23
 Authors@R: c(
     person("Hunter", "Holcomb",
            email = "huh0001@auburn.edu",
