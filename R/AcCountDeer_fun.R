@@ -1,4 +1,11 @@
 
+utils::globalVariables(c(
+  "age_class",
+  "sex",
+  "harvest_class",
+  "population"
+))
+
 #' Run the AcCountDeer population dynamics model
 #'
 #' @description
@@ -385,7 +392,7 @@ AcCountDeer <- function(
   )
 
 
-  year_0_harvest_prep <- reshape(
+  year_0_harvest_prep <- stats::reshape(
     year_0_population[c("age_class", "male", "female")],
     varying = c("male", "female"),
     v.names = "population",
