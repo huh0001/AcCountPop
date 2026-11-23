@@ -1,0 +1,23 @@
+Package: AcCountPop
+Title: An Accessible Method to Model Wild Game Populations
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Hunter", "Holcomb",
+           email = "huh0001@auburn.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-6507-8821")),
+    person("Aniruddha", "Belsare",
+           email = "avb0033@auburn.edu",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-4651-0116"))
+    )	
+Description: AcCountPop uses a straightforward accounting approach to support deer population management and harvest-related decisions. The model is designed to be transparent, flexible, and accessible, with underlying assumptions, parameters, and processes that are readily understandable to wildlife managers. By integrating routinely available population and harvest data, this model provides a practical tool for evaluating harvest-management scenarios and projecting population trend so informed harvest regulations can be made. This tool was originally developed for white-tailed deer (Odocoileus virginianus) but is readily adaptable to model populations of other species of the Cervidae family.
+License: MIT + file LICENSE
+Config/roxygen2/version: 8.1.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    dplyr
